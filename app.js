@@ -104,14 +104,14 @@
 // console.log(!true) //false
 // console.log(!!true) //true
 
-//8 function
+//8 Function
 // function calculateAge(year) {
 //     return 2022 - year
-}
-
+// }
+//
 // const myAge = calculateAge(1981)
-// console.log(myAge)
-
+// console.log(myAge) //41
+//
 // function logInfoAbout(name, year) {
 //     const age = calculateAge(year)
 //
@@ -122,9 +122,55 @@
 //     }
 // }
 //
-// logInfoAbout('VitBoch', 1981)
-// logInfoAbout('Ivan', 1990)
-// logInfoAbout('Spyder man', 2395)
+// logInfoAbout('VitBoch', 1981) //A person named VitBoch now has an age 41
+// logInfoAbout('Ivan', 1990) //A person named Ivan now has an age 32
+// logInfoAbout('Spyder man', 2395) //Actually this is the future
 
-//9 Array
+//9 Arrays
+//  const cars = ['Mazda', 'Mercedes', 'Ford'] //['Mazda', 'Mercedes', 'Ford']
+// // const cars = new Array('Mazda', 'Mercedes', 'Ford') //bed practice
+// console.log(cars[2]) //Ford
+// console.log(cars.length) //3
+//
+// cars[0] = 'Porsche'
+// console.log(cars) //[ 'Porsche', 'Mercedes', 'Ford' ]
+//
+// cars[3] = 'Mazda'
+// console.log(cars) //[ 'Porsche', 'Mercedes', 'Ford', 'Mazda' ]
+// cars[cars.length] = 'Lexus'
+// console.log(cars) //[ 'Porsche', 'Mercedes', 'Ford', 'Mazda', 'Lexus' ]
+
+//10 Loops
+// const cars = ['Mazda', 'Mercedes', 'Ford'] //['Mazda', 'Mercedes', 'Ford']
+
+// for (let i = 0; i < cars.length; i++) {
+//     // console.log(i) //0, 1, 2
+//     const car = cars[i]
+//     console.log(car) //Mazda, Mercedes, Ford
+// }
+
+// for (let car of cars) {
+//     console.log(car) //Mazda, Mercedes, Ford
+// }
+
+//11 Objects
+// const person = new Object() //bed practice
+const person = {
+    firstName: 'Vit',
+    lastName: 'Boch',
+    year: 1981,
+    languages: ['Ru', 'En', 'De'],
+    hasWife: true,
+    greet: function () {
+        console.log('greet from person')
+    }
+}
+
+// console.log(person.firstName) //Vit
+console.log(person['lastName']) //Boch
+const key = 'languages'
+console.log(person[key]) //[ 'Ru', 'En', 'De' ]
+const keyData = 'year'
+console.log(person[keyData]) //1981
+person.greet() //greet from person
 
