@@ -62,8 +62,6 @@
 // const isFullAge = currentYear - birthYear >= fullAge //41 >= 40 => true
 // console.log(isFullAge) //true
 
-<<<<<<< HEAD
-=======
 //6 Conditional statements
 // const  courseStatus = 'pending' //ready, fail, pending
 //
@@ -130,5 +128,3 @@
 
 //9 Array
 
-
->>>>>>> 3d09660 (8)
