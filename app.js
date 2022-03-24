@@ -42,7 +42,7 @@
 // console.log(currentYear++)
 // console.log(--currentYear)
 
-//4 Data types
+//4 Basic data types
 // const firstName = 'Vit'
 // const  age = 40
 // const isProgrammer = true
@@ -53,7 +53,7 @@
 // console.log(typeof x) //undefined
 // console.log(typeof null) //object
 
-//5 Operators precedence
+//5 Operators precedences
 // const fullAge = 40
 // const birthYear = 1981
 // const currentYear = 2022
@@ -160,7 +160,7 @@ const person = {
     lastName: 'Boch',
     year: 1981,
     languages: ['Ru', 'En', 'De'],
-    hasWife: true,
+    hasWife: false,
     greet: function () {
         console.log('greet from person')
     }
@@ -173,4 +173,14 @@ console.log(person[key]) //[ 'Ru', 'En', 'De' ]
 const keyData = 'year'
 console.log(person[keyData]) //1981
 person.greet() //greet from person
+person.hasWife = true
+console.log(person) /*{
+firstName: 'Vit',
+    lastName: 'Boch',
+    year: 1981,
+    languages: [ 'Ru', 'En', 'De' ],
+    hasWife: true,
+    greet: [Function: greet]
+}*/
+
 
