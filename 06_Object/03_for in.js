@@ -3,7 +3,7 @@ const person = {
     name: 'Vit',
     age: 40,
     isProgrammer: true,
-    launguages: ['ru', 'en', 'de'],
+    languages: ['ru', 'en', 'de'],
     ['data now']: Date.now(),
     'complex key': 'Complex Value',
     ['key_' + (1 + 3)]: 'Computed key',
@@ -20,7 +20,7 @@ for (let key in person) {
                                 key: name
                                 key: age
                                 key: isProgrammer
-                                key: launguages
+                                key: languages
                                 key: data now
                                 key: complex key
                                 key: key_4

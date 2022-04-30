@@ -2,7 +2,7 @@ const person = {
     name: 'Vit',
     age: 40,
     isProgrammer: true,
-    launguages: ['ru', 'en', 'de'],
+    languages: ['ru', 'en', 'de'],
     ['data now']: Date.now(),
     'complex key': 'Complex Value',
     ['key_' + (1 + 3)]: 'Computed key',
@@ -21,7 +21,7 @@ console.log(person) /*
                       name: 'Vit',
                       age: 40,
                       isProgrammer: true,
-                      launguages: [ 'ru', 'en', 'de' ],
+                      languages: [ 'ru', 'en', 'de' ],
                       'data now': 1650868672189,
                       'complex key': 'Complex Value',
                       key_4: 'Computed key',
@@ -34,7 +34,7 @@ console.log(person.greet()) //Greet from person
 person.age++
 console.log(person.age) //41
 
-//add launguages
+//add languages
 person.launguages.push('us')
 console.log(person.launguages) //[ 'ru', 'en', 'de', 'us' ]
 
@@ -50,7 +50,7 @@ console.log(person)
                       name: 'Vit',
                       age: 41,
                       isProgrammer: true,
-                      launguages: [ 'ru', 'en', 'de', 'us' ],
+                      languages: [ 'ru', 'en', 'de', 'us' ],
                       'data now': 1650869447270,
                       'complex key': 'Complex Value',
                       greet: [Function: greet]
