@@ -137,3 +137,8 @@ logger.keyAndValue.call({a: 1, "c": {b: 2}}) /*
                                                 a: 1
                                                 c: [object Object]
 */
+
+logger.keyAndValue.call({a: 1, "c": 2}) /*
+                                                a: 1
+                                                c: 2
+*/
