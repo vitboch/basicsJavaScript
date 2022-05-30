@@ -103,4 +103,15 @@ h2List[h2List.length - 1].onclick = () => {
     }
 }
 
+//cancel link
 
+const link = headingH3.querySelector('a')
+
+link.addEventListener("click", (event) => {
+    event.preventDefault()
+    console.log('click on link',event.target.getAttribute('href'))
+
+    //follow the link programmatically
+    const url = event.target.getAttribute('href')
+    window.location = url
+})
